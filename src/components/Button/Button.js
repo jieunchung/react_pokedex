@@ -3,11 +3,15 @@ import "./Button.css";
 
 const Button = (props) => {
   const previousPokemon = () => {
-    props.setIndex(props.index - 1);
+    props.index > 1
+      ? props.setIndex(props.index - 1)
+      : props.setIndex(props.index);
   };
 
   const nextPokemon = () => {
-    props.setIndex(props.index + 1);
+    props.index === 151
+      ? props.setIndex(props.index)
+      : props.setIndex(props.index + 1);
   };
 
   return (
