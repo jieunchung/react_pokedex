@@ -4,6 +4,7 @@ select {
   border: none;
   text-transform: capitalize;
   font-family: "Cardo", serif;
+  background: #ffffff;
 }
 
 select:focus {

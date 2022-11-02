@@ -26,9 +26,9 @@ const App = () => {
         setName(data.name);
         setFlavorText(
           data.flavor_text_entries[1].language.name === "en"
-            ? data.flavor_text_entries[1].flavor_text.replace(/[\n\r]/g, " ")
+            ? data.flavor_text_entries[1].flavor_text.replace(/[\n\f]/g, " ")
             : data.flavor_text_entries[6].language.name === "en" &&
-                data.flavor_text_entries[6].flavor_text.replace(/[\n\r]/g, " ")
+                data.flavor_text_entries[6].flavor_text.replace(/[\n\f]/g, " ")
         );
         setEggGroups(data.egg_groups);
         setHabitat(data.habitat.name.replace(/-/g, " "));
