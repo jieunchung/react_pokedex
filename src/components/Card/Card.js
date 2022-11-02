@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Card.css";
 const Card = (props) => {
   const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.index}.png`;
+
+  useEffect(() => {
+    document.body.className = props.habitat;
+  }, [props.habitat]);
 
   return (
     <div className="card">

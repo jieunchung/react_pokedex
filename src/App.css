@@ -1,9 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Rubik:wght@700&display=swap");
+
 .app {
-  background: #bbe6e4;
   min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Karla", sans-serif;
+}
+
+.cave {
+  background: #e2dbd0;
+}
+
+.forest {
+  background: #c7d6c7;
+}
+
+.grassland {
+  background: #d5e8d6;
+}
+
+.mountain {
+  background: #e8ded0;
+}
+
+.waters {
+  background: #cce2e1;
+}
+
+.urban {
+  background: #e0e0e0;
+}
+
+.sea {
+  background: #d0e5ed;
+}
+
+.terrain {
+  background: #e5dac5;
+}
+
+.rare {
+  background: #efe7c4;
 }
