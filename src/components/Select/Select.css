@@ -1,0 +1,11 @@
+select {
+  width: 20rem;
+  padding: 0.8rem;
+  border: none;
+  text-transform: capitalize;
+  font-family: "Cardo", serif;
+}
+
+select:focus {
+  outline: none;
+}

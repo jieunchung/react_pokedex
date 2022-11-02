@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Card from "./components/Card";
-import Select from "./components/Select";
+import Button from "./components/Button/Button";
+import Card from "./components/Card/Card";
+import Select from "./components/Select/Select";
+import "./App.css";
 
 const App = () => {
   const [list, setList] = useState([]);
@@ -21,22 +23,21 @@ const App = () => {
     fetch(`https://pokeapi.co/api/v2/pokemon-species/${index}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data.flavor_text_entries[6].language.name);
         setName(data.name);
         setFlavorText(
           data.flavor_text_entries[1].language.name === "en"
-            ? data.flavor_text_entries[1].flavor_text.replace(/\n/g, " ")
+            ? data.flavor_text_entries[1].flavor_text.replace(/[\n\r]/g, " ")
             : data.flavor_text_entries[6].language.name === "en" &&
-                data.flavor_text_entries[6].flavor_text.replace(/\n/g, " ")
+                data.flavor_text_entries[6].flavor_text.replace(/[\n\r]/g, " ")
         );
         setEggGroups(data.egg_groups);
-        setHabitat(data.habitat.name);
+        setHabitat(data.habitat.name.replace(/-/g, " "));
         setGrowthRate(data.growth_rate.name);
       });
   }, [index]);
 
   return (
-    <div>
+    <div className="app">
       <Select setIndex={setIndex} index={index} list={list} />
       <Card
         index={index}
@@ -46,6 +47,7 @@ const App = () => {
         habitat={habitat}
         rate={growthRate}
       />
+      <Button setIndex={setIndex} index={index} />
     </div>
   );
 };

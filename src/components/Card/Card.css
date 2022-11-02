@@ -1,0 +1,74 @@
+.card {
+  margin: 1rem;
+  max-width: 20rem;
+  background-color: #ffffff;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sprite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.border {
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: radial-gradient(
+    circle at 18.7% 37.8%,
+    rgb(250, 250, 250) 0%,
+    rgb(225, 234, 238) 90%
+  );
+}
+
+.border > img {
+  width: 8rem;
+}
+
+.pokémon {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+section {
+  margin-left: 5rem;
+  text-transform: capitalize;
+  opacity: 80%;
+}
+
+p,
+span {
+  margin-top: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.75rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding-left: 0.2rem;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
