@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Rubik:wght@700&display=swap");
+@font-face {
+  font-family: "Pokemon";
+  src: local("PokemonGb-RAeo"),
+    url("./font/PokemonGb-RAeo.ttf") format("truetype");
+}
 
 .app {
-  min-height: 100vh;
-  width: 100vw;
+  color: #1c2128;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: "Pokemon", sans-serif;
   align-items: center;
-  font-family: "Karla", sans-serif;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .cave {

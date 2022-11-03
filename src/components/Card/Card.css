@@ -1,10 +1,12 @@
 .card {
   margin: 1rem;
-  max-width: 20rem;
+  max-width: 35rem;
   background-color: #ffffff;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sprite {
@@ -25,50 +27,121 @@
 }
 
 .border > img {
-  width: 8rem;
+  width: 11rem;
 }
 
 .pokémon {
   text-align: center;
   text-transform: capitalize;
-  font-size: 2rem;
-  font-family: "Rubik", sans-serif;
+  font-size: 2.2rem;
+  font-family: "Pokemon", sans-serif;
 }
 
 .description {
   text-align: center;
   margin-bottom: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  line-height: 1.3rem;
 }
 
-section {
-  margin-left: 5rem;
+.facts {
+  text-align: center;
+  list-style: none;
   text-transform: capitalize;
-  opacity: 80%;
-}
-
-p,
-span {
-  margin-top: 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 0.2rem;
-  font-size: 0.75rem;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  list-style-type: none;
-}
-
-li {
-  padding-left: 0.2rem;
-}
-
-span {
-  display: flex;
-  align-items: center;
+  color: #707070;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
   margin-bottom: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.egg-group {
+  padding-right: 0.2rem;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .card {
+    max-width: 25rem;
+  }
+  .pokémon {
+    font-size: 1.7rem;
+  }
+  .description {
+    font-size: 0.7rem;
+  }
+  .facts {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .card {
+    max-width: 20rem;
+  }
+  .pokémon {
+    font-size: 1.5rem;
+  }
+  .description {
+    font-size: 0.6rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+  .facts {
+    font-size: 0.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .card {
+    max-width: 17rem;
+  }
+  .border > img {
+    width: 9rem;
+  }
+  .pokémon {
+    font-size: 1.3rem;
+  }
+  .description {
+    font-size: 0.5rem;
+    line-height: 1.1rem;
+  }
+  .facts {
+    font-size: 0.4rem;
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .card {
+    max-width: 15rem;
+  }
+  .border > img {
+    width: 8rem;
+  }
+  .pokémon {
+    font-size: 1rem;
+  }
+  .description {
+    font-size: 0.45rem;
+    line-height: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .facts {
+    font-size: 0.38rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

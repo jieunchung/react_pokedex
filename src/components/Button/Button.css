@@ -1,9 +1,12 @@
 .button {
-  width: 20rem;
-  padding: 0.8rem;
-  border: none;
+  border: 1px transparent;
+  border-radius: 0;
   display: grid;
+  font-size: 0.9rem;
   grid-template-columns: 1fr 1fr;
+  padding: 0.8rem;
+  width: 35rem;
+  -webkit-appearance: none;
 }
 
 .previous {
@@ -11,12 +14,54 @@
 }
 
 button {
-  min-height: 5vh;
+  min-height: 7vh;
   border: none;
   background: #ffffff;
-  font-family: "Cardo", serif;
+  font-family: "Pokemon", sans-serif;
 }
 
 button:hover {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .button {
+    width: 25rem;
+  }
+  button {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .button {
+    width: 20rem;
+  }
+  button {
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .button {
+    width: 17rem;
+  }
+  button {
+    font-size: 0.54rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .button {
+    width: 15rem;
+  }
+  button {
+    font-size: 0.47rem;
+  }
 }

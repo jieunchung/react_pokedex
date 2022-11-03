@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Button from "./components/Button/Button";
 import Card from "./components/Card/Card";
 import Select from "./components/Select/Select";
+import "./font/PokemonGb-RAeo.ttf";
+
 import "./App.css";
 
 const App = () => {

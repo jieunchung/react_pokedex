@@ -1,12 +1,54 @@
 select {
-  width: 20rem;
-  padding: 0.8rem;
-  border: none;
-  text-transform: capitalize;
-  font-family: "Cardo", serif;
   background: #ffffff;
+  border: 1px transparent;
+  border-radius: 0;
+  color: #000;
+  font-size: 0.9rem;
+  font-family: "Pokemon", sans-serif;
+  min-height: 7vh;
+  padding: 1rem;
+  width: 35rem;
+  text-transform: capitalize;
+  -webkit-appearance: none;
+}
+
+option {
+  -webkit-appearance: none;
 }
 
 select:focus {
   outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  select {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  select {
+    width: 25rem;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 440px) {
+  select {
+    width: 20rem;
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  select {
+    width: 17rem;
+    font-size: 0.54rem;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  select {
+    width: 15rem;
+    font-size: 0.47rem;
+  }
 }
