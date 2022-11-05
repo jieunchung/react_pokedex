@@ -25,9 +25,9 @@ const Card = (props) => {
           + egg:{" "}
           {props.group.map((eggGroup, index) => {
             return (
-              <li className="egg-group" key={index}>
+              <span className="egg-group" key={index}>
                 {eggGroup.name}
-              </li>
+              </span>
             );
           })}
         </li>
